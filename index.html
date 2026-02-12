@@ -60,25 +60,7 @@
 </head>
 <body>
  
-
-	<!-- FB code after body -->
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-  	var js, fjs = d.getElementsByTagName(s)[0];
-  	if (d.getElementById(id)) return;
-  	js = d.createElement(s); js.id = id;
-  	js.src = "//http://connect.facebook.net/en_US/all.js#xfbml=1&appId=124257464339753";
-  	fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
-	<!-- end fb code -->
-
-	<!-- BEGIN HYPE EXCHANGE -->
-	<!--/*UhPinions Double */-->
-	<script type="text/javascript" src="UHP-hypeDouble.js"></script>
-
-	<!--/*UhPinions Push */-->
-	<script type="text/javascript" src="UHP-hypePush.js"></script>
-	<!-- END HYPE EXCHANGE -->
+<div id="fb-root"></div>
 
 <div class="navnav">
   <div class="navnavinner">
@@ -477,19 +459,12 @@ Like <a href="http://facebook.com/UHpinions">UHpinions</a> on Facebook!
 <div Style="position:absolute; margin:-20px 0px 0px 320px;">
 <a href="#" onClick="mysticky.showhidenote('hide');return false">Close [x]</a>
 </div>
-</div>
 
-</div>
-end floating bar -->
+<!-- All scripts moved to bottom for fast page load -->
 
-<script type="text/javascript" src="jquery.form.min.js"></script>
-<script type="text/javascript">
-/* <![CDATA[ */
-var _wpcf7 = {"loaderUrl":"https:\/\/web.archive.org\/
-<!-- Load jQuery async from CDN -->
-<script async src="jquery.min.js"></script>
+<!-- Load jQuery async from CDN with fallback -->
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>
-// jQuery fallback
 window.jQuery || document.write('<script src="jquery.js"><\/script>');
 </script>
 
@@ -508,21 +483,20 @@ window.jQuery || document.write('<script src="jquery.js"><\/script>');
 <script defer src="widgets.js"></script>
 <script defer src="widget.js"></script>
 
-<!-- Facebook SDK - loaded async -->
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous">
+<!-- Facebook SDK - loaded async and deferred -->
+<script async defer>
 (function(d, s, id) {
   	var js, fjs = d.getElementsByTagName(s)[0];
   	if (d.getElementById(id)) return;
   	js = d.createElement(s); js.id = id;
-  	js.src = "//http://connect.facebook.net/en_US/all.js#xfbml=1&appId=124257464339753";
+  	js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=124257464339753";
   	fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 </script>
 
 <!-- Contact Form 7 config -->
 <script>
-var _wpcf7 = {"loaderUrl":"https:\/\/web.archive.org\/web\/20160402120834\/http:\/\/static.uhpinions.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ...","cached":"1"};
+var _wpcf7 = {"loaderUrl":"loading.gif","sending":"Sending ...","cached":"1"};
 </script>
 
 </body>
