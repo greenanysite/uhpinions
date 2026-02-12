@@ -1,0 +1,713 @@
+/*
+Theme Name: UHpinions
+Theme URI: http://UHpinions.com
+Description: The UHpinions theme.
+Version: 1.0
+Author: UHpinions
+*/
+
+/* Browser reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+body { line-height: 1.25; color: #000; font-family: Arial, Helvetica, sans-serif; }
+strong { font-weight: bold; }
+em { font-style: italic; }
+/* Tables still need 'cellspacing="0"' in the markup. */
+table { border-collapse: collapse; border-spacing: 0; width: 100%;}
+caption, th, td { text-align: left; font-weight: normal; }
+ul,ol { margin-left: 3em; }
+p { margin: 1em 0; }
+a { outline: none; }
+
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+
+/* Clearing floats without extra markup
+   Based on How To Clear Floats Without Structural Markup by PiE
+   [http://www.positioniseverything.net/easyclearing.html] */
+
+.clear { display: inline-block; }   
+.clear:after, .container:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+* html .clear { height: 1%; }
+.clear { display: block; }
+
+
+/* ***************************************************************** */
+
+body {
+	font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
+	font-size: 12px;
+	color: black;
+	background: #1b1b1b;
+}
+
+a {
+	text-decoration: none;
+	color: #e4372d;
+}
+
+a:hover {
+	color: #e4372d;	
+}
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#header-ads {
+	padding: 19px 0;
+	position: relative
+}
+
+#header-right-ad {
+	display: block;
+	position: absolute;
+	top: 19px;
+	right: 0;
+}
+
+#header {
+	position: relative;
+	height: 127px;
+	background: url('header-back.png') no-repeat;
+}
+
+#container {
+	padding: 0;
+	margin: 0;
+	background: white;
+}
+
+#container-bottom {
+	height: 5px;
+	background: url('container-bottom.png') no-repeat bottom;
+}
+
+h1 a {
+	position: absolute;
+	top: 11px;
+	left: 13px;
+	display: block;
+	width: 413px;
+	height: 98px;
+	background: url('h1.png') no-repeat;
+	text-indent: -2000em;
+}
+
+#header-links {
+	position: absolute;
+	top: 18px;
+	right: 158px;
+	display: block;
+	width: 336px;
+}
+
+#nav-submit,
+#nav-best,
+#nav-random,
+#nav-favorites {
+	position: absolute;
+	top: 0;
+	display: block;
+	height: 32px;
+	text-indent: -2000em;
+}
+
+#nav-submit {
+	left: 0;
+	width: 79px;
+	background: url('nav-submit.png') no-repeat;
+}
+
+#nav-best {
+	left: 79px;
+	width: 61px;
+	background: url('nav-best.png') no-repeat;
+}
+
+#nav-random {
+	left: 140px;
+	width: 89px;
+	background: url('nav-random.png') no-repeat;
+}
+
+#nav-favorites {
+	right: 0;
+	width: 107px;
+	background: url('nav-favorites.png') no-repeat;
+}
+
+#nav-submit:hover,
+#nav-random:hover,
+#nav-favorites:hover {
+	background-position: 0px -32px;
+}
+
+#best-links {
+	display: none;
+	position: absolute;
+	top: 32px;
+	left: 80px;
+	padding: 4px 0 8px 9px;
+	width: 200px;
+}
+
+#nav-best-wrapper:hover #nav-best {
+	background-position: 0px -32px;
+}
+
+#nav-best-wrapper:hover #best-links {
+	display: block;
+}
+
+#best-links a {
+	color: #e9e9e9;
+	font-size: 11px;
+	line-height: 15px;
+}
+
+#login-signup {
+	position: absolute;
+	top: 21px;
+	right: 28px;
+	display: block;
+	width: 117px;
+	height: 26px;
+	background: url('login-signup.png') no-repeat;
+	text-indent: -2000em;
+}
+
+#login-signup:hover {
+	background-position: 0px -26px;
+}
+
+#stuff {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 297px;
+	height: 26px;
+}
+
+#follow-us {
+	position: absolute;
+	top: 3px;
+	left: 0px;
+}
+
+#follow-us img {
+	margin: 0 0 0 7px;
+	padding: 0;
+	float: left;
+}
+
+#follow-us img.first {
+	margin-left: 0px;	
+}
+
+#s {
+	background: url('right-search.png') no-repeat;
+	width: 178px; /* 214px - 30px - 6px */
+	height: 18px; /* 26px - 4px - 4px */
+	border: 0;
+	padding: 4px 30px 4px 6px;
+	font-size: 12px;
+	line-height: 18px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+#content {
+	float: left;
+	width: 628px;
+	margin: 0 0 0 10px;
+}
+
+#right {
+	width: 300px;
+	float: right;
+	margin-right: 10px;
+	padding-bottom: 30px;
+}
+
+.right-box {
+	margin: 13px 0 20px 0;
+	background: #e9e9e9 url('right-box-bottom.png') no-repeat bottom;
+}
+
+.right-box-top {
+	background: url('right-box-top.png') no-repeat;	
+	height: 8px;
+}
+
+.right-box-padding {
+	padding: 0 31px 22px 31px;
+}
+
+#categories {
+	background: url('sidebar-categories.png') no-repeat 0 2px;
+	padding-top: 19px;
+}
+
+#categories ul,
+#categories li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#categories ul {
+	border-top: 1px solid #9c9c9c;
+	margin: 10px 0;
+}
+
+li.cat-item a {
+	display: block;
+	border-bottom: 1px solid #9c9c9c;
+	color: #818181;
+	padding: 9px 0px;
+}
+
+li.cat-item a:hover {
+	color: #e4372d;
+}
+
+.bannerad {
+	margin-bottom: 50px;
+}
+
+.tags {
+	color: #666;
+	font-style: italic;
+	padding: 0;
+}
+
+.post {
+	margin-bottom: 70px;
+}
+
+.post.archive {
+	border-bottom: 1px solid #dddddd;
+	padding-bottom: 10px;
+	margin: 10px 0 0 0;
+}
+
+.archive h4 a {
+	font-size: 14px;
+	color: #3c5a98;
+	font-weight: bold;
+}
+
+.date {
+	float: left;
+	background: url('date-triangle.png') no-repeat right bottom;
+	padding-bottom: 11px;
+}
+
+.date div {
+	background: #e9e9e9;
+	padding: 6px 10px;
+	color: black;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+h2 {
+	clear: left;
+	font-size: 19px;
+	color: black;
+	font-weight: bold;
+	margin: 0;
+}
+
+h2 a {
+	display: block;
+	padding: 5px 0 0 0;
+	margin-bottom: 0;
+	font-size: 19px;
+	color: black;
+	font-weight: bold;
+}
+
+h2.pagetitle {
+	font-size: 18px;
+	color: #333;
+	margin-bottom: 1em;
+}
+
+.entry {
+	clear: left;
+	position: relative;
+}
+
+.entry img {
+	border: 1px solid #a4a4a4;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	max-width: 626px;
+}
+
+.review {
+	padding: 0 10px 50px 10px;
+	border: 1px solid #a4a4a4;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	margin-bottom: 1em;
+	background: url('uh-watermark.png') no-repeat bottom;
+}
+
+.post-extras {
+	margin-top: 10px;
+	position: relative;
+	height: 47px;
+	background: #e9e9e9;
+	border: 1px solid #a4a4a4;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.ratings {
+	position: absolute;
+	top: 6px;
+	left: 9px;
+	display: block;
+	width: 115px;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 16px;
+}
+
+.post-ratings-loading {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.post-ratings img {
+	float: left !important;
+	margin-right: 3px !important;
+}
+
+/*
+.rate-it {
+	width: 112px;
+}
+
+.rate-it-star {
+	width: 20px;
+	height: 18px;
+	float: left;
+	margin-right: 3px;
+	background: url('/web/20160404160856im_/http://static.uhpinions.com/wp-content/themes/uhpinions/images/rating.png') no-repeat 0 -18px;
+	text-indent: -2000em;
+}
+
+.rate-it-star.star-5 {
+	margin-right: 0;
+}
+
+.stars-1 .star-1,
+.stars-2 .star-1,
+.stars-2 .star-2,
+.stars-3 .star-1,
+.stars-3 .star-2,
+.stars-3 .star-3,
+.stars-4 .star-1,
+.stars-4 .star-2,
+.stars-4 .star-3,
+.stars-4 .star-4,
+.stars-5 .star-1,
+.stars-5 .star-2,
+.stars-5 .star-3,
+.stars-5 .star-4,
+.stars-5 .star-5 {
+	background-position: 0 0;
+}*/
+
+.comment-box {
+	position: absolute;
+	top: 11px;
+	left: 136px;
+	display: block;
+	width: 111px;
+	height: 24px; /* 28 - 4 */
+	padding-bottom: 4px;
+	background: url('comment-box.png') no-repeat;
+	font-weight: bold;
+	color: white;
+	line-height: 24px;
+	font-size: 11px;
+	text-align: center;
+}
+
+.facebook-comments-link {
+	position: absolute;
+	top: 17px;
+	left: 136px;
+}
+
+.comment-box:hover {
+	color: white;
+}
+
+.original {
+	position: absolute;
+	top: 17px;
+	left: 290px;
+	text-decoration: underline;
+}
+
+.extras-twitter,
+.extras-facebook,
+.extras-email,
+.extras-favorite,
+.extras-favorite-on {
+	position: absolute;
+	top: 9px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-indent: -2000em;
+}
+
+.extras-twitter {
+	right: 111px;
+	background: url('extras-twitter.png') no-repeat;
+}
+
+.extras-facebook {
+	right: 76px;
+	background: url('extras-facebook.png') no-repeat;
+}
+
+.extras-email {
+	right: 42px;
+	background: url('extras-email.png') no-repeat;
+}
+
+.extras-favorite {
+	right: 8px;
+	background: url('extras-favorite.png') no-repeat;
+}
+
+.extras-favorite-on {
+	right: 8px;
+	background: url('extras-favorite-on.png') no-repeat;
+}
+
+.extras-favorite-reg {
+	position: absolute;
+	top: 42px;
+	right: 8px;
+	display: block;
+	width: 95px;
+	padding: 5px;
+	background: white;
+	border: 1px solid #a4a4a4;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	
+	-moz-box-shadow: 3px 3px 6px #616161;
+	-webkit-box-shadow: 3px 3px 6px #616161;
+	box-shadow: 3px 3px 6px #616161;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#616161')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#616161');
+}
+
+.extras-favorite-reg a {
+	text-decoration: underline;
+}
+
+html .wpfp-span img {
+	display: none;
+	visibility: hidden;
+}
+
+.commentlist {
+	margin: 0 0 0 20px;
+	font-size: 11px;
+	color: #7c7c7c;
+}
+
+.commentlist img {
+	float: none;
+	padding: 0;
+	border: 0;
+}
+
+.commentlist li {
+
+}
+
+.cdata {
+	margin: 15px 0;
+}
+
+.cdata strong {
+  display: block;
+  /*color:#000;*/
+}
+
+#content img.avatar {
+  	float: right;
+	display: inline;
+	border: 0;
+	margin: 1px 1px 0;
+}
+
+.ctext {
+	margin: -8px 0 0 0;
+	padding: 0;
+	max-width: 475px;
+}
+
+.commentlist li p {
+	font-size: 1em !important;
+}
+
+.commentmetadata {
+	font-size: 0.85em;
+}
+
+.commentmetadata a {
+  color: #518DAD;
+}
+
+#comment {
+	width: 530px;
+	height: 170px;
+}
+
+#footer {
+	margin: 20px 0 0 0;
+	padding: 15px 0 35px 0;
+	background: url('footer-top.png') no-repeat;
+}
+
+#footer a {
+	float: left;
+	color: white;
+	font-weight: bold;
+	margin-right: 9px;
+}
+
+#copyright {
+	float: right;
+	color: #e9e9e9;
+}
+
+textarea {
+	margin: 0;
+}
+
+html input.wpcf7-file.attachment {
+	width: 100px !important;
+}
+
+.navigation {
+	clear: both;
+	height: 5em;
+}
+
+.wpfp-link.remove-parent {
+	font-size: 10px;
+	text-decoration: underline;
+}
+
+/* Make WordPress comments mimic Facebook comments */
+.commentlist,
+.commentlist li {
+	list-style-type: none;
+	margin: 0;
+	font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+}
+.commentlist ol {
+	padding: 0;
+}
+.commentlist li {
+	border-top: 1px solid #e2e2e2;
+	font-size: 11px;
+	padding: 10px;
+}
+.commentlist .cdata strong,
+.commentlist .ctext,
+.commentlist .commentmetadata {
+	display: block;
+	margin-left: 60px;
+}
+.commentlist .cdata {
+	margin-top: 0;
+}
+.commentlist .cdata strong {
+	color: #3B5998;
+}
+.commentlist .ctext {
+	color: #1A1A1A;
+	line-height: 14px;
+}
+.commentlist .commentmetadata {
+	color: gray;
+}
+#content img.avatar {
+	float: left;
+}
+.facebook-anon {
+	display: block;
+	float: left;
+	width: 50px;
+	height: 50px;
+	background: url('facebook-anon.gif');
+}
+/* End comments */
+/*
+     FILE ARCHIVED ON 16:08:56 Apr 04, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:26:29 Feb 12, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.85
+  exclusion.robots: 0.084
+  exclusion.robots.policy: 0.068
+  esindex: 0.015
+  cdx.remote: 18.012
+  LoadShardBlock: 88.768 (3)
+  PetaboxLoader3.datanode: 235.347 (5)
+  load_resource: 258.072 (2)
+  PetaboxLoader3.resolve: 76.867 (2)
+*/

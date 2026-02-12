@@ -1,0 +1,11 @@
+.navnav {
+  background-image:url(https://web.archive.org/web/20160315200942im_/http://static.regretsy.com/nav/bkg.png);
+  background-repeat:repeat-x;
+}
+
+.navnavinner {
+  width:1075px;
+  height:38px;
+  padding:0px;
+  margin:auto;
+}

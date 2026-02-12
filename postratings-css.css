@@ -1,0 +1,36 @@
+.post-ratings {
+	width:100%;
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	opacity: 1;
+	/* background-color: #ffffff; */
+}
+.post-ratings-loading {
+	display: none;
+	height: 16px;
+	text-align: left;
+}
+.post-ratings-image {
+	border: 0px;
+}
+
+/*
+     FILE ARCHIVED ON 06:02:18 Apr 03, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:31:29 Feb 12, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.748
+  exclusion.robots: 0.07
+  exclusion.robots.policy: 0.058
+  esindex: 0.013
+  cdx.remote: 9.24
+  LoadShardBlock: 121.67 (3)
+  PetaboxLoader3.datanode: 124.224 (4)
+  PetaboxLoader3.resolve: 68.909 (2)
+  load_resource: 89.699
+*/

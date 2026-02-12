@@ -1,0 +1,35 @@
+.wpt-left { float: left; margin-right: 10px;  }
+.wpt-right { float: right; margin-left: 10px; }
+.wpt-twitter-name { font-size: 120%; line-height: 1; }
+.wpt-tweet-time { font-size: 90%; }
+.wpt-intents-border { border-top: 1px solid; opacity: .3; margin: 5px 0; }
+.wpt-intents { padding: 0 0 5px; text-align: center; }
+.wpt-intents a span { width: 16px; height: 16px; display: inline-block; margin-right: 3px; position: relative; top: 2px; }
+.wpt-intents .wpt-reply span { background: url(/web/20160404162008im_/http://static.uhpinions.com/wp-content/plugins/wp-to-twitter/images/spritev2.png) 0px; }
+.wpt-intents .wpt-retweet span { background: url(/web/20160404162008im_/http://static.uhpinions.com/wp-content/plugins/wp-to-twitter/images/spritev2.png) -80px; }
+.wpt-intents .wpt-favorite span { background: url(/web/20160404162008im_/http://static.uhpinions.com/wp-content/plugins/wp-to-twitter/images/spritev2.png) -32px; }
+.wpt-intents .wpt-reply:hover span, .wpt-intents .wpt-reply:focus span { background-position: -16px; }
+.wpt-intents .wpt-retweet:hover span, .wpt-intents .wpt-retweet:focus span { background-position: -96px; }
+.wpt-intents .wpt-favorite:hover span, .wpt-intents .wpt-favorite:focus span { background-position: -48px; }
+.retweeted .wpt-intents .wpt-retweet span { background-position: -112px; }
+.favorited .wpt-intents .wpt-favorite span { background-position: -64px; }
+/*
+     FILE ARCHIVED ON 16:20:08 Apr 04, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:31:40 Feb 12, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 1.006
+  exclusion.robots: 0.124
+  exclusion.robots.policy: 0.106
+  esindex: 0.015
+  cdx.remote: 46.221
+  LoadShardBlock: 149.075 (3)
+  PetaboxLoader3.datanode: 1438.142 (5)
+  PetaboxLoader3.resolve: 137.195 (3)
+  load_resource: 1462.155 (2)
+*/
